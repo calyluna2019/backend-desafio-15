@@ -1,0 +1,36 @@
+<p class="text-end"><a href="/login" role="button">Login</a></p>
+<div class="p-2 bg-light rounded">
+  <p class="display-6 text-primary">Registro de Usuario</p>
+  <p>
+    <form action="/signup" method="post">
+      <div class="mb-3">
+        <label class="form-label">Nombre:</label>
+        <input
+          type="text"
+          class="form-control"
+          name="nombre"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email:</label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Contraseña:</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+  </p>
+</div>
