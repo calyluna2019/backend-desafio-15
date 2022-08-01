@@ -5,7 +5,7 @@ const cluster = require('cluster');
 const core = require('os');
 
 /* por consola para el puerto es -p o -port */
-const PORT = argv.port ? argv.port : argv._.length > 0 ? argv._[0] : 8080;
+const PORT = process.env.PORT ? process.env.PORT : argv.port ? argv.port : 8080
 const modo = argv.modo || 'fork';
 
 const startServer =() => {
